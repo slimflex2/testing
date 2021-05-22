@@ -40,7 +40,7 @@ def slavePodTemplate = """
               topologyKey: "kubernetes.io/hostname"
         containers:
         - name: docker
-          image: docker:latest
+          image: nginx:latest
           imagePullPolicy: IfNotPresent
           command:
           - cat
